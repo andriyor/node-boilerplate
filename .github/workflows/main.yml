@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'pnpm'
+      - name: Install modules
+        run: pnpm install
+      - name: Copy/paste detector
+        run: pnpm jscpd
+      - name: TypeScript Coverage
+        run: ts-coverage
+      - name: Lint
+        run: pnpm test
+      - name: Run tests
+        run: pnpm test
