@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx ./src/main.ts",
     "lint": "eslint ./src ./tests",
     "test": "vitest run",
     "jscpd": "jscpd src",
@@ -19,6 +20,7 @@
     "@vitest/coverage-v8": "^0.34.6",
     "eslint": "^8.53.0",
     "jscpd": "^3.5.10",
+    "tsx": "^4.1.2",
     "typescript": "^5.2.2",
     "typescript-coverage-report": "^0.8.0",
     "vitest": "^0.34.6"
