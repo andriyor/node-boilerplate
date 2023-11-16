@@ -23,7 +23,7 @@ jobs:
       - name: Copy/paste detector
         run: pnpm jscpd
       - name: TypeScript Coverage
-        run: ts-coverage
+        run: pnpm ts-coverage
       - name: Lint
         run: pnpm test
       - name: Run tests
