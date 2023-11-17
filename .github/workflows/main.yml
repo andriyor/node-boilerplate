@@ -26,5 +26,7 @@ jobs:
         run: pnpm ts-coverage
       - name: Lint
         run: pnpm test
+      - name: Knip finds unused files, dependencies and exports
+        run: pnpm knip
       - name: Run tests
         run: pnpm test

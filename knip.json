@@ -1,0 +1,5 @@
+{
+  "entry": ["src/main.ts", "tests/main.test.ts"],
+  "project": ["**/*.ts"],
+  "ignoreDependencies": ["@vitest/coverage-v8"]
+}
