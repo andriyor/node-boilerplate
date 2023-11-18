@@ -29,4 +29,8 @@ jobs:
       - name: Knip finds unused files, dependencies and exports
         run: pnpm knip
       - name: Run tests
-        run: pnpm test
+        run: pnpm testcov
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
