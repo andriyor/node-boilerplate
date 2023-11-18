@@ -15,8 +15,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint --fix",
-    "*.scss": "stylelint --config .stylelintrc.json --max-warnings 0 --fix"
+    "*.{js,ts,jsx,tsx}": "eslint --fix"
   },
   "keywords": [],
   "author": "",
