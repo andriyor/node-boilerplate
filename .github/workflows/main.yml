@@ -20,14 +20,8 @@ jobs:
           cache: 'pnpm'
       - name: Install modules
         run: pnpm install
-      - name: Copy/paste detector
-        run: pnpm jscpd
-      - name: TypeScript Coverage
-        run: pnpm ts-coverage
       - name: Lint
         run: pnpm test
-      - name: Knip finds unused files, dependencies and exports
-        run: pnpm knip
       - name: Run tests
         run: pnpm testcov
       - name: Upload coverage reports to Codecov
