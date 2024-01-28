@@ -5,6 +5,10 @@ module.exports = antfu({
     tsconfigPath: 'tsconfig.json',
   },
   overrides: {
+    typescript: {
+      'ts/no-redeclare': 'off',
+      'ts/switch-exhaustiveness-check': 'error',
+    },
     javascript: {
       'no-console': 'off',
     },

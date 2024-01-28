@@ -14,3 +14,8 @@
 - Copy/paste detector: [jscpd](https://github.com/kucherenko/jscpd)
 - TypeScript coverage: [typescript-coverage-report](https://github.com/alexcanessa/typescript-coverage-report)
 - Find unused files, dependencies and exports [knip](https://github.com/webpro/knip)
+
+## TS Guideline
+
+[Creating types and values with the same name in TypeScript | notes.dt.in.th](https://notes.dt.in.th/TypeScriptValuesAndTypesWithSameName)
+
