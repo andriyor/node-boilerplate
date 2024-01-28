@@ -34,3 +34,13 @@ export function getColorNameEslint(c: Color) {
       return 'Blue'
   }
 }
+
+enum Direction {
+  Up = "Up",
+  Down = "DOWN",
+}
+
+export type User = {
+  name: string
+  direction: Direction
+}
