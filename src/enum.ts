@@ -1,3 +1,4 @@
+// [Safer Exhaustive Switch Statements in TypeScript](https://www.meticulous.ai/blog/safer-exhaustive-switch-statements-in-typescript)
 const Color = {
   Red: 'red',
   Green: 'green',
