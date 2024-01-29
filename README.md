@@ -20,3 +20,8 @@
 [Creating types and values with the same name in TypeScript | notes.dt.in.th](https://notes.dt.in.th/TypeScriptValuesAndTypesWithSameName)
 
 [Safer Exhaustive Switch Statements in TypeScript](https://www.meticulous.ai/blog/safer-exhaustive-switch-statements-in-typescript)
+
+## TODO
+
+- [ ] debug and use no-const-enum [cartant/eslint-plugin-etc: More general-purpose (TypeScript-related) ESLint rules](https://github.com/cartant/eslint-plugin-etc)
+    - [ ]  understand why locally installed plugin sometimes doesn't work
