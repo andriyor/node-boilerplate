@@ -9,7 +9,7 @@
     "test": "vitest run",
     "testcov": "vitest run --coverage",
     "prepare": "husky install",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^1.2.1",
     "@tsconfig/strictest": "^2.0.2",
-    "@types/node": "^20.11.8",
+    "@types/node": "^20.11.10",
     "@vitest/coverage-v8": "^0.34.6",
     "eslint": "^8.56.0",
     "eslint-plugin-etc": "^2.0.3",
@@ -29,6 +29,6 @@
     "lint-staged": "^15.2.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "vitest": "^0.34.6"
+    "vitest": "^1.2.2"
   }
 }
