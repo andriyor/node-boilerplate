@@ -21,8 +21,8 @@ devDependencies:
     specifier: ^8.56.0
     version: 8.56.0
   eslint-plugin-etc:
-    specifier: file:../eslint-plugin-etc
-    version: file:../eslint-plugin-etc(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^2.0.3
+    version: 2.0.3(eslint@8.56.0)(typescript@5.3.3)
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -1500,6 +1500,24 @@ packages:
       escape-string-regexp: 1.0.5
       eslint: 8.56.0
       ignore: 5.3.0
+    dev: true
+
+  /eslint-plugin-etc@2.0.3(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-o5RS/0YwtjlGKWjhKojgmm82gV1b4NQUuwk9zqjy9/EjxNFKKYCaF+0M7DkYBn44mJ6JYFZw3Ft249dkKuR1ew==}
+    peerDependencies:
+      eslint: ^8.0.0
+      typescript: '>=4.0.0'
+    dependencies:
+      '@phenomnomnominal/tsquery': 5.0.1(typescript@5.3.3)
+      '@typescript-eslint/experimental-utils': 5.62.0(eslint@8.56.0)(typescript@5.3.3)
+      eslint: 8.56.0
+      eslint-etc: 5.2.1(eslint@8.56.0)(typescript@5.3.3)
+      requireindex: 1.2.0
+      tslib: 2.6.2
+      tsutils: 3.21.0(typescript@5.3.3)
+      typescript: 5.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /eslint-plugin-i@2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0):
@@ -3436,24 +3454,4 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
-    dev: true
-
-  file:../eslint-plugin-etc(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {directory: ../eslint-plugin-etc, type: directory}
-    id: file:../eslint-plugin-etc
-    name: eslint-plugin-etc
-    peerDependencies:
-      eslint: ^8.0.0
-      typescript: '>=4.0.0'
-    dependencies:
-      '@phenomnomnominal/tsquery': 5.0.1(typescript@5.3.3)
-      '@typescript-eslint/experimental-utils': 5.62.0(eslint@8.56.0)(typescript@5.3.3)
-      eslint: 8.56.0
-      eslint-etc: 5.2.1(eslint@8.56.0)(typescript@5.3.3)
-      requireindex: 1.2.0
-      tslib: 2.6.2
-      tsutils: 3.21.0(typescript@5.3.3)
-      typescript: 5.3.3
-    transitivePeerDependencies:
-      - supports-color
     dev: true
