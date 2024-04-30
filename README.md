@@ -25,3 +25,4 @@
 
 - [ ] debug and use no-const-enum [cartant/eslint-plugin-etc: More general-purpose (TypeScript-related) ESLint rules](https://github.com/cartant/eslint-plugin-etc)
     - [ ]  understand why locally installed plugin sometimes doesn't work
+
