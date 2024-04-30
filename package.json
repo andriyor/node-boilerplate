@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx ./src/main.ts",
     "lint": "eslint ./src ./tests",
-    "test": "vitest run",
+    "test": "vitest --dir='src' run",
     "testcov": "vitest run --coverage",
     "prepare": "husky install",
     "build": "tsc -p tsconfig.build.json",
@@ -20,15 +20,17 @@
   "license": "ISC",
   "devDependencies": {
     "@antfu/eslint-config": "^1.2.1",
-    "@tsconfig/strictest": "^2.0.2",
-    "@types/node": "^20.11.10",
-    "@vitest/coverage-v8": "^1.2.2",
-    "eslint": "^8.56.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^20.12.7",
+    "@vitest/coverage-istanbul": "^1.5.3",
+    "@vitest/coverage-v8": "^1.5.3",
+    "@vitest/ui": "^1.5.3",
+    "eslint": "^8.57.0",
     "eslint-plugin-etc": "^2.0.3",
     "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "tsx": "^4.7.0",
-    "typescript": "^5.3.3",
-    "vitest": "^1.2.2"
+    "lint-staged": "^15.2.2",
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.3"
   }
 }
